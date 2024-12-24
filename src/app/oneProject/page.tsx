@@ -1,4 +1,4 @@
-export default function OneProject(project : {vignette:string,name:string, resume : string, labels:string[]}) {
+export default function OneProject(project : {vignette:string;name:string;resume:string;labels:string[]}) {
     return (
         <div className="col-md-6 mb-5">
             <div className="card custom-card h-100">
