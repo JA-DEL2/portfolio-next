@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cfcec9;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  /*font-family: ;*/
+}
+
+header img{
+  max-width: 30px;
+}
+
+header a{
+  color:#7F878B;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "basic-sans", sans-serif;
+
+
+}
+
+header a:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.custom-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #cfcec9;
+}
+.custom-card-body-c {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.custom-card-body-p {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#but {
+  text-align:right;
+}
+
+.pp {
+  margin-left: 31px;
+}
+
+.custom-img-container {
+  width: 86px;
+  height: 86px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-img-c {
+  max-width: 85px;
+  max-height: 85px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-img-p {
+  max-width: 31px;
+  max-height: 31px;
+  width: 100%;
+  height: auto;
+  margin-right: 25px; /* Espacement entre l'image et le texte (ajustez selon vos besoins) */
+  object-fit: cover; /* S'assure que l'image est coupée pour s'ajuster dans le carré */
+}
+
+.custom-img-s {
+  margin-top: 3px;
+  max-width: 35px;
+  max-height: 35px;
+  width: 100%;
+  height: auto;
+  margin-right: 10px; /* Espacement entre l'image et le texte (ajustez selon vos besoins) */
+  object-fit: cover; /* S'assure que l'image est coupée pour s'ajuster dans le carré */
+}
+
+.mgt {
+  margin-top: 10px;
+}
+
+.p-infos{
+  margin-left: 6vw;
+}
+
+.p-img {
+  margin-top: 7px;
+  max-width: 60vw;
+  max-height: 100vh;
+  margin-bottom: 3px;
+}
+
+.p-content {
+  width: 60vw;
+  padding: 10px;
+  background-color: #cfcec9;
+  border-radius: 10px;
+  border : solid #7F878B 0.7pt;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border : solid #7F878B 1px;
+  max-width: 50vw;
+}
+
+.ml-5 {
+  margin-left:3rem;
+}
+
+.custom-img-a {
+  max-width: 31px;
+  max-height: 31px;
+  width: 100%;
+  height: auto;
+  margin-right: 9px; /* Espacement entre l'image et le texte (ajustez selon vos besoins) */
+  object-fit: cover; /* S'assure que l'image est coupée pour s'ajuster dans le carré */
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px; /* Ajustez la taille de l'image selon vos besoins */
+  height: 150px; /* Ajustez la taille de l'image selon vos besoins */
+  border-radius: 7%; /* Pour obtenir une forme de cercle pour la photo de profil */
+  border : solid #7F878B 1.5px;
+}
+
+.subtitle {
+  color: #7F878B; /* Couleur de sous-titre, ajustez selon vos préférences */
+}
+
+.button-container {
+  margin-top: 10px; /* Marge en haut des boutons, ajustez selon vos préférences */
+}
+
+.button-image {
+  width: 40px; /* Ajustez la taille des boutons selon vos besoins */
+  height: 40px; /* Ajustez la taille des boutons selon vos besoins */
+  margin: 5px; /* Marge entre les boutons, ajustez selon vos préférences */
+  border-radius: 10%;
+}
+
+.custom-align-left {
+  margin-left:1.05rem;
+}
+
+.custom-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card-i {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #DBDAD5;
+}
+
+.word-container {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #7F878B;
+  border-radius: 5px;
+}
+
+.cross-emoji {
+  cursor: pointer;
+  text-decoration: none;
+  color: #7F878B;
+  margin-left: 5px;
+}
+
+.mp-0 {
+  margin-left: 5vw;
+}
+
+.custom-footer {
+  background-color: #cfcec9;
+  color:#7F878B;
+}
