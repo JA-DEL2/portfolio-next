@@ -1,4 +1,11 @@
-export default function OneProject(project : {vignette:string;name:string;resume:string;labels:string[]}) {
+type projectProps = {
+    vignette: string;
+    name: string;
+    resume: string;
+    labels: string[];
+}
+
+export default function OneProject(project : projectProps) {
     return (
         <div className="col-md-6 mb-5">
             <div className="card custom-card h-100">

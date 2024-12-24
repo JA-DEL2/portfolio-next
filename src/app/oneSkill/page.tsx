@@ -1,4 +1,10 @@
-export default function OneSkill(competence : {name:string;commentaire:string;vignette:string}) {
+type skillProps = {
+    name: string;
+    commentaire :string;
+    vignette: string;
+}
+
+export default function OneSkill(competence : skillProps) {
     return(
         <div className="col-md-3 mb-4">
             <div className="card custom-card h-100">
