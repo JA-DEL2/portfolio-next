@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
     return(
         <>
@@ -15,7 +17,7 @@ export default function About() {
     <div className="p-content mx-auto">
         <h4 className="text-center mb-5">Mon parcours</h4>
         <div className="d-flex">
-            <img src="/images/iut.webp" alt="Logo IUT de Lens" className="custom-img-a"/>
+            <Image src="/images/iut.webp" alt="Logo IUT de Lens" className="custom-img-a" width="31" height="31"/>
                 <h5 className="ml-3">BUT Informatique</h5>
         </div>
         <p className="mt-1 ml-5">2022 - Présent</p>
@@ -23,7 +25,7 @@ export default function About() {
         <p className="ml-5">Parcours Réalisation d'application</p>
 
         <div className="d-flex mt-5">
-            <img src="/images/gambetta.webp" alt="Logo Cité scolaire gambetta carnot arras" className="custom-img-a"/>
+            <Image src="/images/gambetta.webp" alt="Logo Cité scolaire gambetta carnot arras" className="custom-img-a" width="31" height="31"/>
                 <h5 className="ml-3">Baccalauréat Général</h5>
         </div>
         <p className="mt-1 ml-5">2019 - 2022</p>

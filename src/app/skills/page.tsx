@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Skills() {
     const skills  = [
         {name:"SQL & PL/PG SQL",commentaire:"Maîtrise approfondie : requêtes complexes, vues et fonctions, procédures & trigger.",vignette:"image_1704619949"},
@@ -15,8 +17,8 @@ export default function Skills() {
                             <div className="card-body custom-card-body-c">
                                 <h4 className="card-title">{s.name}</h4>
                                 <div className="custom-img-container mx-auto">
-                                    <img className="img-fluid rounded mb-2 custom-img-c"
-                                         src={"/images/" + s.vignette + ".webp"} alt="picto du projet"/>
+                                    <Image className="img-fluid rounded mb-2 custom-img-c"
+                                         src={"/images/" + s.vignette + ".webp"} alt="picto du projet" width="85" height="85"/>
                                 </div>
                                 <p className="card-text">{s.commentaire}</p>
                             </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function skills() {
     const projects : {vignette:string,name:string, resume : string, labels:string[]}[] = [
         {vignette:"image_1704641001",name:"UTREK", resume : "Développement d'un site web \"complet\" pour une entreprise imaginée de toute pièce.", labels:["HTML","CSS"]},
@@ -17,8 +19,9 @@ export default function skills() {
                                 <div className="card-body custom-card-body-p">
                                     <div className="d-flex align-items-center">
                                         <div className="mr-3">
-                                            <img className="img-fluid rounded mb-2 custom-img-p"
-                                                 src={"/images/" + p.vignette + ".webp"} alt="picto du projet"/>
+                                            <Image className="img-fluid rounded mb-2 custom-img-p"
+                                                 src={"/images/" + p.vignette + ".webp"} alt="picto du projet"
+                                                   width="31" height="31"/>
                                         </div>
                                         <div>
                                             <h4 className="card-title">{p.name}</h4>

@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
     return (
         <>
             <header>
                 <Link key={"/"} href={"/"}>
-                    <img className="image-logo" src="/images/home.webp" alt="Logo maison"/>
+                    <Image className="image-logo" src="/images/home.webp" alt="Logo maison" width="30" height="30"/>
                 </Link>
                 <Link key={"/about"} href={"/about"}>
                     Me découvrir
