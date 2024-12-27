@@ -1,6 +1,5 @@
-import OneSkill from "@/app/oneSkill/page";
 export default function Skills() {
-    const skills : {name:string;commentaire:string;vignette:string}[] = [
+    const skills  = [
         {name:"SQL & PL/PG SQL",commentaire:"Maîtrise approfondie : requêtes complexes, vues et fonctions, procédures & trigger.",vignette:"image_1704619949"},
         {name:"Java",commentaire:"Maîtrise approfondie du langage, du concept de programmation orientée objet (POO), des patrons de conceptions et des bonnes pratiques.",vignette:"image_1704620335"},
         {name:"PHP",commentaire:"Maîtrise correcte du langage, de sa syntaxe et de son concept de POO.",vignette:"image_1704620511"},
@@ -10,7 +9,20 @@ export default function Skills() {
     return(
         <div className="container mt-5">
             <div className="row">
-                {skills.map(s=><OneSkill key={s.name} {... s}/>)}
+                {skills.map(s=> (
+                    <div className="col-md-3 mb-4" key={s.name}>
+                        <div className="card custom-card h-100">
+                            <div className="card-body custom-card-body-c">
+                                <h4 className="card-title">{s.name}</h4>
+                                <div className="custom-img-container mx-auto">
+                                    <img className="img-fluid rounded mb-2 custom-img-c"
+                                         src={"/images/" + s.vignette + ".webp"} alt="picto du projet"/>
+                                </div>
+                                <p className="card-text">{s.commentaire}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     )
