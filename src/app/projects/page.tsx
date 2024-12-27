@@ -1,7 +1,10 @@
 export default function skills() {
     const projects : {vignette:string,name:string, resume : string, labels:string[]}[] = [
         {vignette:"image_1704641001",name:"UTREK", resume : "Développement d'un site web \"complet\" pour une entreprise imaginée de toute pièce.", labels:["HTML","CSS"]},
-        {vignette:"image_1704656211",name:"Portfolio", resume : "Création de mon portfolio personnel \"from scratch\" avec Laravel et Bootstrap.", labels:["PHP","HTML","Laravel","CSS","Bootstrap","SQLite"]}
+        {vignette:"image_1704656211",name:"Portfolio", resume : "Création de mon portfolio personnel \"from scratch\" avec Laravel et Bootstrap.", labels:["PHP","HTML","Laravel","CSS","Bootstrap","SQLite"]},
+        {vignette:"logo-marathon",name:"Marathon du Web", resume : "Développement d'une bibliothèque en ligne pour des histoire à choix multiples, le tout en 36h.", labels:["PHP","HTML","Laravel","Git","CSS","Bootstrap","SQLite"]},
+        {vignette:"logo-pokemon",name:"Pokedex", resume : "Réalisation d'un site \"pokedex\" en ligne permettant de rechercher un pokemon et d'avoir des informations sur lui comme ses évolutions, son son, etc.", labels:["SQLite","Flask","Python","GitLab","HTML","CSS","Git"]},
+        {vignette:"logo-flatcraft",name:"Flatcraft", resume : "Conception d'une version 2D du jeu Minecraft, avec implémentation de patron de conceptions.", labels:["Java","JavaFX"]}
     ]
 
     return (
